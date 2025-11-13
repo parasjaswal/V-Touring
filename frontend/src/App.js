@@ -965,6 +965,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navigation onBookingClick={() => handleBookingClick()} />
         
         <Routes>
