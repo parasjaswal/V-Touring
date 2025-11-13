@@ -477,7 +477,7 @@ const Home = ({ onBookingClick }) => {
 
 // Destination Detail Page
 const DestinationDetail = ({ onBookingClick }) => {
-  const { id } = window.location.pathname.split('/').pop();
+  const { id } = useParams();
   const destination = destinations.find(d => d.id === id);
 
   if (!destination) {
